@@ -1,0 +1,39 @@
+{
+    "name": "@arkanii/git-branch-cli",
+    "version": "1.0.0",
+    "description": "A client for creating git branch easily with pattern.",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Arkanii/git-branch-cli.git"
+    },
+    "author": "Théo Frison (Arkanii)",
+    "license": "MIT",
+    "bin": {
+        "git-branch": "lib/cli.js"
+    },
+    "files": [
+        "lib"
+    ],
+    "type": "module",
+    "bugs": {
+        "url": "https://github.com/Arkanii/git-branch-cli/issues"
+    },
+    "homepage": "https://github.com/Arkanii/git-branch-cli#readme",
+    "keywords": [
+        "cli",
+        "git",
+        "branch"
+    ],
+    "dependencies": {
+        "meow": "^10.1.1",
+        "update-notifier": "^5.1.0"
+    },
+    "scripts": {
+        "build": "babel src -d lib",
+        "clean": "rm -rf lib"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.15.7",
+        "@babel/core": "^7.15.8"
+    }
+}
