@@ -1,6 +1,6 @@
-const FLAGS = {
+const Flags = {
     INIT: 'init',
     VERSION: 'version'
 };
 
-export default FLAGS;
+export default Flags;
