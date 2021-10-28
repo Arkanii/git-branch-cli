@@ -1,6 +1,6 @@
 {
     "name": "git-branch-cli",
-    "version": "1.0.0",
+    "version": "0.0.0",
     "description": "A client for creating git branch easily using interactive questions.",
     "engines": {
         "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
