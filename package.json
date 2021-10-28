@@ -1,7 +1,7 @@
 {
-    "name": "@arkanii/git-branch-cli",
+    "name": "git-branch-cli",
     "version": "1.0.0",
-    "description": "A client for creating git branch easily with pattern.",
+    "description": "A client for creating git branch easily using interactive questions.",
     "engines": {
         "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
     },
@@ -35,7 +35,5 @@
         "load-json-file": "^7.0.1",
         "meow": "^10.1.1",
         "slugify": "^1.6.1"
-    },
-    "scripts": {},
-    "devDependencies": {}
+    }
 }
