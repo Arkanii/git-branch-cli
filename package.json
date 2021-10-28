@@ -37,21 +37,5 @@
         "slugify": "^1.6.1"
     },
     "scripts": {},
-    "devDependencies": {},
-    "git-branch-cli": [
-        {
-            "name": "type",
-            "message": "De quel type est votre branche ?",
-            "type": "autocomplete",
-            "choices": [
-                "feature",
-                "bug"
-            ],
-            "characterAfter": "/"
-        },
-        {
-            "name": "name",
-            "message": "Quel est le nom de la fonctionnalité ?"
-        }
-    ]
+    "devDependencies": {}
 }

@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import meow from "meow";
 import findCommand from "./utils/findCommand.js";
 import FLAGS from "./constants/flags.js";
@@ -8,7 +10,7 @@ const cli = meow(`
 	  $ git-branch
 
 	Options
-    --${FLAGS.INIT}, -i : Initialize a new branch
+    --${FLAGS.INIT}, -i        Initialize a new branch
 
 	Examples
 	  $ git-branch
@@ -23,7 +25,7 @@ const cli = meow(`
 );
 
 export const options = {
-    [FLAGS.INIT]: () => commands.init(import.meta)
+    [FLAGS.INIT]: () => commands.init()
 };
 
 findCommand(cli, options);
