@@ -23,7 +23,7 @@ const cli = meow(`
 );
 
 export const options = {
-    [FLAGS.INIT]: () => commands.init()
+    [FLAGS.INIT]: () => commands.init(import.meta)
 };
 
 findCommand(cli, options);

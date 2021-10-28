@@ -28,8 +28,30 @@
         "branch"
     ],
     "dependencies": {
-        "meow": "^10.1.1"
+        "execa": "^5.1.1",
+        "fuzzy": "^0.1.3",
+        "inquirer": "^8.2.0",
+        "inquirer-autocomplete-prompt": "^1.4.0",
+        "load-json-file": "^7.0.1",
+        "meow": "^10.1.1",
+        "slugify": "^1.6.1"
     },
     "scripts": {},
-    "devDependencies": {}
+    "devDependencies": {},
+    "git-branch-cli": [
+        {
+            "name": "type",
+            "message": "De quel type est votre branche ?",
+            "type": "autocomplete",
+            "choices": [
+                "feature",
+                "bug"
+            ],
+            "characterAfter": "/"
+        },
+        {
+            "name": "name",
+            "message": "Quel est le nom de la fonctionnalité ?"
+        }
+    ]
 }
