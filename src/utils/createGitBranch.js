@@ -13,7 +13,7 @@ const createGitBranch = async (answers) => {
                 let answerConfig = config.find(field => keyAnswer === field.name);
                 let answer = answers[keyAnswer];
 
-                branchName += slugify(answer, {
+                branchName += slugify(answer.toString(), {
                     replacement: '_',
                     lower: true,
                     remove: /[*+~.()'"!:@?;,%µ$£\[\]°\\\/]/g
