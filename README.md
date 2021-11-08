@@ -10,6 +10,7 @@
 
 ## Features
 
+- Easy to use
 - Interactive prompt
 - Fully configurable
 
@@ -71,7 +72,8 @@ A client for creating git branch easily using interactive questions.
     $ git-branch
     
   Options
-    --${FLAGS.INIT}, -i        Initialize a new branch
+    --init, -i        Initialize a new branch
+    --version, -v     Print git-branch-cli installed version
 ```
 
 ## Configuration
@@ -136,3 +138,8 @@ The different choices for the user
 Type: `char`
 
 The character that will be positioned after the user's slugified answer
+
+
+## Credits
+
+Created by Théo Frison, inspired and taken for some parts from [this project](https://github.com/carloscuesta/gitmoji-cli).
