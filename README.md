@@ -119,7 +119,7 @@ Type: `string`
 
 The question that will be displayed
 
-##### type (required)
+##### type
 
 Type: `string`
 
