@@ -11,15 +11,15 @@ const createGitBranch = async (answers) => {
         .then(config => {
             Object.keys(answers).forEach((keyAnswer) => {
                 let answerConfig = config.find(field => keyAnswer === field.name);
-                let answer = answers[keyAnswer];
+                let answer = answers[keyAnswer].toString();
 
-                branchName += slugify(answer.toString(), {
+                branchName += slugify(answer, {
                     replacement: '_',
                     lower: true,
                     remove: /[*+~.()'"!:@?;,%µ$£\[\]°\\\/]/g
                 });
 
-                if (answerConfig.characterAfter !== undefined){
+                if (answerConfig.characterAfter !== undefined && answer !== ""){
                     branchName += answerConfig.characterAfter;
                 }
             });

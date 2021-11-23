@@ -3,12 +3,22 @@ import {loadJsonFile} from 'load-json-file';
 const getConfig = async () => {
     return await loadJsonFile('package.json')
         .then((json) => {
-            if (typeof json['git-branch-cli'] === undefined) {
+
+            const config = json['git-branch-cli'];
+
+            let returnConfig = [];
+
+            if (typeof config === undefined) {
                 console.error();
                 return;
             }
 
-            return json['git-branch-cli'];
+            config.forEach((question) => {
+                question.required = question.required ?? true;
+                returnConfig.push(question);
+            });
+
+            return returnConfig;
         });
 }
 

@@ -139,6 +139,14 @@ Type: `char`
 
 The character that will be positioned after the user's slugified answer
 
+#### required
+
+Type: `bool`
+
+Determine if user's answer can be blank.
+If this field is `false` and the user's answer is blank, the `characterAfter` value isn't add to branch name.
+
+Defaults: `true`
 
 ## Credits
 
